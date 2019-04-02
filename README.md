@@ -1,3 +1,5 @@
+[![goodtables.io](https://goodtables.io/badge/github/AntoineAugusti/gharchive-gouv-fr.svg)](https://goodtables.io/github/AntoineAugusti/gharchive-gouv-fr)
+
 # GH Archive Gouv FR
 Download data from [GH Archive](https://www.gharchive.org) and extract push events done with `@*.gouv.fr` email addresses.
 
