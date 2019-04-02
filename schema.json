@@ -1,0 +1,66 @@
+{
+   "title":"Commits sur GitHub par des adresses e-mail en .gouv.fr",
+   "author":"Antoine Augusti <antoine.augusti@data.gouv.fr>",
+   "created":"2019-04-02",
+   "updated":"2019-04-02",
+   "homepage":"https://github.com/AntoineAugusti/vacances-scolaires",
+    "fields": [
+        {
+            "name": "id",
+            "type": "integer",
+            "required":true
+        },
+        {
+            "name": "repository_name",
+            "type": "string",
+            "required":true
+        },
+        {
+            "name": "ref",
+            "type": "string",
+            "required":true
+        },
+        {
+            "name": "author_email",
+            "type": "string",
+            "required":true,
+            "constraints": {
+                "pattern":".*@.*\\.gouv\\.fr$"
+            }
+        },
+        {
+            "name": "author_domain",
+            "type": "string",
+            "required":true,
+            "constraints": {
+                "pattern":".*\\.gouv\\.fr$"
+            }
+        },
+        {
+            "name": "author_name",
+            "type": "string",
+            "required":true
+        },
+        {
+            "name": "message",
+            "type": "string",
+            "required":true
+        },
+        {
+            "name": "sha",
+            "type": "string",
+            "required":true
+        },
+        {
+            "name": "organisation_name",
+            "type": "string",
+            "required":false
+        },
+        {
+            "name": "created_at",
+            "type": "datetime",
+            "required":true
+        }
+    ],
+    "primaryKey": "id"
+}
