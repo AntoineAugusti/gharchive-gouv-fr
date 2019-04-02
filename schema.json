@@ -3,25 +3,33 @@
    "author":"Antoine Augusti <antoine.augusti@data.gouv.fr>",
    "created":"2019-04-02",
    "updated":"2019-04-02",
-   "homepage":"https://github.com/AntoineAugusti/vacances-scolaires",
+   "homepage":"https://github.com/AntoineAugusti/gharchive-gouv-fr",
     "fields": [
         {
             "name": "id",
+            "description": "Identifiant unique de l'événement",
+            "example": "2489811994",
             "type": "integer",
             "required":true
         },
         {
             "name": "repository_name",
+            "description": "Le nom du répertoire GitHub",
+            "example": "openchordcharts/openchordcharts-sample-data",
             "type": "string",
             "required":true
         },
         {
             "name": "ref",
+            "description": "La branche concernée",
+            "example": "refs/heads/master",
             "type": "string",
             "required":true
         },
         {
             "name": "author_email",
+            "description": "L'adresse e-mail de l'auteur du commit",
+            "example": "b445c0e632270b31bc0c900a39de4fc4159fb695@data.gouv.fr",
             "type": "string",
             "required":true,
             "constraints": {
@@ -30,6 +38,8 @@
         },
         {
             "name": "author_domain",
+            "description": "Le nom de domaine de l'adresse e-mail de l'auteur du commit",
+            "example": "data.gouv.fr",
             "type": "string",
             "required":true,
             "constraints": {
@@ -38,26 +48,36 @@
         },
         {
             "name": "author_name",
+            "description": "Le nom de l'auteur du commit",
+            "example": "Jean Dupont",
             "type": "string",
             "required":true
         },
         {
             "name": "message",
+            "description": "Le message de commit",
+            "example": "WIP",
             "type": "string",
             "required":true
         },
         {
             "name": "sha",
+            "description": "Le SHA1 du commit",
+            "example": "288e534ef881c3973bc413a60370dfa59caf7fbe",
             "type": "string",
             "required":true
         },
         {
             "name": "organisation_name",
+            "description": "Le nom de l'organisation",
+            "example": "betagouv",
             "type": "string",
             "required":false
         },
         {
             "name": "created_at",
+            "description": "La date de création du commit, en ISO8601",
+            "example": "2015-01-01T20:40:32Z",
             "type": "datetime",
             "required":true
         }
