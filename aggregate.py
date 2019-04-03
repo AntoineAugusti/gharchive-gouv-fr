@@ -3,7 +3,7 @@ import json
 
 data = []
 
-with open("all.json") as f:
+with open("data/commits.json") as f:
     for line in f:
         parsed = json.loads(line)
 
@@ -26,7 +26,7 @@ with open("all.json") as f:
 
         data.append(current)
 
-with open("commits.csv", "w") as f:
+with open("data/commits.csv", "w") as f:
     writer = csv.DictWriter(f, fieldnames=data[0].keys())
     writer.writeheader()
     writer.writerows(data)
