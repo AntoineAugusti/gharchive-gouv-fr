@@ -1,2 +1,0 @@
-id,repository_name,ref,author_email,author_domain,author_name,message,sha,organisation_name,created_at
-2489811994,openchordcharts/openchordcharts-sample-data,refs/heads/master,b445c0e632270b31bc0c900a39de4fc4159fb695@data.gouv.fr,data.gouv.fr,Christophe Benz,Update,288e534ef881c3973bc413a60370dfa59caf7fbe,openchordcharts,2015-01-01T20:40:32Z

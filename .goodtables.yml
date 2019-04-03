@@ -1,0 +1,7 @@
+files:
+  - source: data/commits.csv
+    schema: schema.json
+    format: csv
+    encoding: utf-8
+settings:
+  row_limit: 100000
