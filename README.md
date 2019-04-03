@@ -41,5 +41,5 @@ Be aware that this will take a good amount of bandwidth, storage and processing 
 |organisation_name|chaîne de caractères|Le nom de l'organisation|betagouv||
 |created_at|date et heure|La date de création du commit, en ISO8601|2015-01-01T20:40:32Z||
 
-## Licence
+## License
 MIT. See the license file.
